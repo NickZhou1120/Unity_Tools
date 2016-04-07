@@ -7,10 +7,10 @@ public class PlayerSettingHelper : Editor
     [InitializeOnLoad]
     public class KeyStoreHelper
     {
-        static string m_key_store_path = "Assets//Editor//denachina.keystore";
-        static string m_key_alias_name = "dena";
-        static string m_key_store_pass = "denadena01";
-        static string m_key_alias_pass = "denadena01";
+        static string m_key_store_path = "Assets//Editor//Test.keystore";
+        static string m_key_alias_name = "test";
+        static string m_key_store_pass = "test";
+        static string m_key_alias_pass = "test";
 #if UNITY_ANDROID
         static keyStoreHelper()
         {
