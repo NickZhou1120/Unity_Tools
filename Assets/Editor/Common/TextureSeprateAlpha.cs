@@ -20,8 +20,8 @@ public static class TextureSeprateAlpha
         TextureImporter importer = (TextureImporter)AssetImporter.GetAtPath(assetpath);
         if (importer != null)
         {
-            importer.SetPlatformTextureSettings("Android", 4096, TextureImporterFormat.ARGB32, 100);
-            importer.SetPlatformTextureSettings("iphone", 4096, TextureImporterFormat.ARGB32, 100);
+			importer.SetPlatformTextureSettings("Android", 4096, TextureImporterFormat.ARGB32,100,true);
+			importer.SetPlatformTextureSettings("iphone", 4096, TextureImporterFormat.ARGB32,100,true);
         }
         AssetDatabase.ImportAsset(assetpath, ImportAssetOptions.ForceUpdate);
 
@@ -77,8 +77,8 @@ public static class TextureSeprateAlpha
             importer.wrapMode = TextureWrapMode.Clamp;
             importer.filterMode = FilterMode.Bilinear;
             importer.anisoLevel = 0;
-            importer.SetPlatformTextureSettings("Android", maxSize, androidFormat, 100);
-            importer.SetPlatformTextureSettings("iPhone", maxSize, iosFormat, 100);
+            importer.SetPlatformTextureSettings("Android", maxSize, androidFormat, 100,true);
+            importer.SetPlatformTextureSettings("iPhone", maxSize, iosFormat, 100,true);
         }
         AssetDatabase.ImportAsset(assetPath);
     }

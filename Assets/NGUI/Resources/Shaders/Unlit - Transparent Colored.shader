@@ -57,7 +57,7 @@ Shader "Unlit/Transparent Colored"
 				return o;
 			}
 				
-			fixed4 frag (v2f IN) : COLOR
+			fixed4 frag (v2f IN) : SV_Target
 			{
 				return tex2D(_MainTex, IN.texcoord) * IN.color;
 			}
@@ -83,7 +83,7 @@ Shader "Unlit/Transparent Colored"
 			ZWrite Off
 			Fog { Mode Off }
 			Offset -1, -1
-			ColorMask RGB
+			//ColorMask RGB
 			Blend SrcAlpha OneMinusSrcAlpha
 			ColorMaterial AmbientAndDiffuse
 			
