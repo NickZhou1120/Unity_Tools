@@ -69,7 +69,7 @@ public static class TextureSeprateAlpha
     {
         var importer = (TextureImporter)AssetImporter.GetAtPath(assetPath);
         {
-            importer.textureType = TextureImporterType.Advanced;
+            importer.textureType = TextureImporterType.Default;
             importer.npotScale = TextureImporterNPOTScale.ToNearest;
             importer.isReadable = false;
             importer.mipmapEnabled = false;
